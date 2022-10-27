@@ -1,15 +1,16 @@
 :root {
   --title-text-color: #212121;
+  --maket-color: #ffffff;
+  --primary-text-color: #757575;
+  --accent-color: #2196f3;
 }
 
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-
-  --maket-color: #ffffff;
-  --primary-text-color: #757575;
-  --accent-color: #2196f3;
+  background-color: var(--maket-color);
+  color: var(--primary-text-color);
 }
 .list {
   list-style: none;
@@ -104,6 +105,7 @@ body {
   color: var(--title-text-color);
   font-weight: 700;
   line-height: 1.14;
+  font-size: 14px;
   text-transform: uppercase;
 }
 .description-advantages {
@@ -133,6 +135,13 @@ body {
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
+.description-team {
+  font-size: 16px;
+  line-height: 1, 18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
 
 .description {
   font-size: 16px;
@@ -148,16 +157,12 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background: #f5f4fa;
+  cursor: pointer;
 }
 .button.secondary:hover,
 .button.secondary:focus {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
   color: var(--maket-color);
   background-color: var(--accent-color);
-  cursor: pointer;
 }
 .address-footer {
   font-style: normal;
@@ -168,9 +173,7 @@ body {
 }
 .address-footer:hover,
 .address-footer:focus {
-  color: var(--maket-color);
-  background-color: var(--accent-color);
-  cursor: pointer;
+  color: var(--accent-color);
 }
 .link-address-footer {
   font-style: normal;
@@ -178,10 +181,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--maket-color);
   text-decoration: none;
+  cursor: pointer;
 }
 .link-address-footer:hover,
 .link-address-footer:focus {
-  color: var(--maket-color);
-  background-color: var(--accent-color);
-  cursor: pointer;
+  color: var(--accent-color);
 }
